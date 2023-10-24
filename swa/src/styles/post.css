@@ -1,0 +1,146 @@
+.post-container {
+    position: relative; /* Aggiungi questa proprietà */
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.post-meta {
+    font-size: 0.8em;
+    color: gray;
+}
+.comments-section h3 {
+    cursor: pointer;
+}
+.comment {
+    margin: 5px 0;
+}
+.reply {
+    margin-left: 20px; /* o qualsiasi altro valore che ritieni appropriato */
+    border-left: 1px solid #ccc; /* opzionale, per una migliore visualizzazione */
+    padding-left: 10px; /* opzionale, per una migliore visualizzazione */
+}
+.favorite-button {
+    position: absolute; /* Permette di posizionare il bottone in modo assoluto rispetto al suo contenitore relativo */
+    top: 10px; /* Puoi aggiustare questo valore per allinearlo verticalmente come preferisci */
+    right: 20px; /* La distanza dal lato destro del contenitore. Puoi modificare questo valore per adattarlo al design */
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.delete-button {
+    position: absolute;
+    bottom: 10px; 
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.current-delete-button {
+    position: absolute;
+    bottom: 10px; 
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.current-post-container {
+    position: relative; 
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin: 0 auto; /* Centra il post orizzontalmente */
+    width: 90%; /* O qualsiasi altra percentuale o valore fisso che desideri */
+    max-width: 1000px; /* Puoi adattare questo valore in base alle tue esigenze */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Opzionale: ombra leggera per un po' di profondità */
+}
+
+.current-post-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.current-post-meta {
+    font-size: 0.8em;
+    color: gray;
+    margin-top: 10px; /* Spazio tra il contenuto del post e la meta */
+}
+
+.current-post-tag {
+    display: block; /* Fai sì che il tag venga visualizzato su una nuova riga */
+    margin-top: 5px; /* Spazio tra l'informazione dell'autore e il tag */
+}
+
+.current-favorite-button {
+    position: absolute; 
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.actions-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.comments-container {
+    position: relative;
+}
+
+.comments-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;  /* o una larghezza fissa, come preferisci */
+    z-index: 1;
+}
+.upvote-button {
+    position: absolute; 
+    top: 40px;  /* Distanza dal bordo superiore del contenitore, puoi modificare questo valore per adattarlo al tuo design */
+    right: 20px;  /* Distanza dal bordo destro del contenitore */
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    z-index: 100;
+}
+.comment-textarea, .reply-textarea {
+    width: 85%;  /* Utilizza la larghezza massima disponibile */
+    min-width: 300px;  /* Larghezza minima, puoi modificarla a tuo piacimento */
+    resize: vertical;  /* Permette agli utenti di ridimensionare la textarea solo verticalmente */
+    padding: 8px;  /* Aggiungi un po' di spazio interno per una migliore leggibilità */
+}
+
